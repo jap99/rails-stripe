@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Heroku should use this version of Ruby
 ruby '2.6.0'
 
+#STRIPE
+gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 # For production DB
 gem 'pg', group: :production
 
