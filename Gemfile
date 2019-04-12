@@ -9,6 +9,9 @@ gem 'stripe', :git =>'https://github.com/stripe/stripe-ruby'
 # For production DB
 gem 'pg', group: :production
 
+# Figaro to securely configure app keys - ie. for stripe
+gem 'figaro'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 
