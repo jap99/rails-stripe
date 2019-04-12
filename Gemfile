@@ -20,6 +20,9 @@ gem 'rails_12factor', group: :production
 # App server
 gem 'puma', '~> 3.11'
 
+# add twitter bootstrap
+gem 'bootstrap-sass'
+
 # Use SCSS (for stylesheets)
 gem 'sass-rails', '~> 5.0'
 
