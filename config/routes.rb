@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   root 'pages#home' 
 
   resources :charges
+  resources :purchases, only: [:show] #this route sends requests to the purchases controller; route limited to the method 'show'
+                          #the method 'show' needs a view called 'show.html.erb'
 end
+
+
+#by default, rails directs the controller to render a view with the same name being used 
