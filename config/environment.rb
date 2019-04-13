@@ -4,10 +4,8 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 
-# sendgrid only works on heroku 
-
-# to handle emails locally, add gem letter_opener
- 
+# sendgrid only works on heroku  
+# to handle emails locally, add gem letter_opener 
 ActionMailer::Base.smtp_settings = {
  :address        => 'smtp.sendgrid.net',
  :port           => '587',
