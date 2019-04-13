@@ -25,6 +25,8 @@
                 <% end %> 
 
             <script src="https://checkout.stripe.com/checkout.js"></script>
+            <%# in the future ill create table in db to store different amounts %>
+            <%= hidden_field_tag 'amount', 499 %> 
             <%= hidden_field_tag 'stripeToken' %>
             <%= hidden_field_tag 'stripeEmail' %>
             <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>Buy this!</button>
@@ -41,7 +43,7 @@
                     handler.open({
                         name: 'Rails & Stripe Setup',
                         description: 'Buy this item for ($4.99)',
-                        amount: 499
+                        amount: document.getElementById("amount").value 
                     });
                     e.preventDefault();
                 }) 
