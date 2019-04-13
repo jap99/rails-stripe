@@ -22,6 +22,12 @@ gem 'sqlite3', group: [:development, :test]
 # 12 factor for Heroku - NEEDED FOR HEROKU TO RUN 
 gem 'rails_12factor', group: :production
 
+gem 'activeadmin' 
+gem 'inherited_resources' #needed for activeadmin to work on rails 5
+
+# for user authentication
+gem 'devise' 
+
 # App server
 gem 'puma', '~> 3.11'
 
