@@ -29,7 +29,7 @@ gem 'puma', '~> 3.11'
 gem 'bootstrap-sass'
 
 # to open emails locally (dev. environment)
-gem 'letter_opener', group: :developement 
+gem 'letter_opener', group: :development 
 
 # Use SCSS (for stylesheets)
 gem 'sass-rails', '~> 5.0'
