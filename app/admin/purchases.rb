@@ -1,5 +1,7 @@
 ActiveAdmin.register Purchase do
-    before_filter do 
+    
+    # convert purchase_id from integer to string
+    before_action do 
         Purchase.class_eval do
             def to_param 
                 id.to_s
