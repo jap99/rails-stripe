@@ -28,6 +28,9 @@ gem 'puma', '~> 3.11'
 # add twitter bootstrap
 gem 'bootstrap-sass'
 
+# to open emails locally (dev. environment)
+gem 'letter_opener', group: :developement 
+
 # Use SCSS (for stylesheets)
 gem 'sass-rails', '~> 5.0'
 
